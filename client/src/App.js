@@ -16,11 +16,11 @@ const App = () => {
     <div>
       <SavedList list={savedList} />
 
-      <Link to="/movies/:id">MovieList</Link>
+      <Link to="/movies/">MovieList</Link>
       {/* <Link to="/movies/">Movies</Link> */}
 
-      <Route exact path="/movies/:id" render={props => <MovieList {...props} />} />
-      <Route path="/movies/movies/:id" render={props => <Movie {...props} id={props.id} />} />
+      <Route exact path="/movies/" render={props => <MovieList {...props} />} />
+      <Route path="/movies/:id" render={props => <Movie {...props} id={props.id} />} />
     </div>
   );
 };
