@@ -4,6 +4,7 @@ import { Route, Link } from 'react-router-dom';
 import SavedList from './Movies/SavedList';
 import MovieList from './Movies/MovieList';
 import Movie from './Movies/Movie';
+import MovieCard from './Movies/MovieCard';
 
 const App = () => {
   const [savedList, setSavedList] = useState([]);
